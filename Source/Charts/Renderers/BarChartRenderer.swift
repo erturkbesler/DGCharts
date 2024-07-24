@@ -386,7 +386,7 @@ open class BarChartRenderer: BarLineScatterCandleBubbleRenderer
             let bezierPath = UIBezierPath(roundedRect: barRect, cornerRadius: barRect.width/6)
             context.addPath(bezierPath.cgPath)
             
-            context.fill(barRect)
+            context.drawPath(using: .fill)
             
             if drawBorder
             {
